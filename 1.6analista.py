@@ -73,9 +73,9 @@ agent = Agent(
     tools=[YFinanceTools(),
            TavilyTools()],
     instructions='Você é um analista e tem diferentes clientes. Lembre-se de cada cliente, suas informações e preferências',
-    db=db, # Configurando o meu agente com o database.
+    db=db, # Configurando o database para historiar as conversas. 
     debug_mode=False,
-    add_history_to_context=True, # Historiar o contexto da conversa.
+    add_history_to_context=True, # adicionar o histórico ao contexto. 
     num_history_runs=7,
     enable_user_memories=True,
     add_memories_to_context=True,
